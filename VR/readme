@@ -1,0 +1,4 @@
+数据库连接采用Hibernate反向配置，注意一下先配好数据库，然后就可以生成代码了，具体详情：http://www.cnblogs.com/whjblogs/p/3137385.html或者自行百度
+自己调试的时候，注意先注册，然后再数据库里把activate改为1就可以用了
+http://116.56.140.85:8080/VR/index.html#/login 项目的外网访问，服务器不定时爆炸，所以不要抱有希望
+前后端交互注意，后端发送数据格式{}，前端接收response.data，会自动添加一个data的名字，适用@Jsonview可以指定发送的属性而不是全部发送，但是适用了@Jsonview不能适用@Requsetbosy map取值不知道为什么，要用？拼接Url取
